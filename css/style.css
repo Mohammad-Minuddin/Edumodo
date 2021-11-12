@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.container::after,
+.container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* --Header-Start-- */
+header{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0px 10px;
+}
+.logo{
+    width: 40%;
+    float: left;
+}
+.menu{
+    width: 60%;
+    float: right;
+    padding-top: 6px;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 11px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu ul li a:hover{
+    color: red;
+}
+.menu ul li a i{
+    transition: 0.3s ease-in-out;
+}
+.menu ul li a:hover i{
+    transform: rotate(180deg);
+}
+/* --Header-END-- */
+
+
+/* --Banner-Start-- */
+.banner{
+    background: url(../img/banner-4.jpg);
+    padding: 110px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.banner::before{
+    content: " ";
+    position: absolute;
+    background: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+.banner h4{
+    color: red;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.banner h5{
+    color: white;
+    font-size: 60px;
+    width: 550px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    margin-top: 10px;
+}
+.banner p{
+    color: rgb(219, 219, 219);
+    font-size: 18px;
+    width: 500px;
+    margin-top: 15px;
+}
+.banner button{
+    padding: 12px 25px;
+    background: rgb(236, 87, 0);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/* --Banner-END-- */
+
+
+/* --Admisson-Start-- */
+.admisson{
+    background: #FF5421;
+    padding: 55px 0;
+}
+.admis{
+    width: 33.33%;
+    padding: 0px 4px;
+    float: left;
+    display: flex;
+}
+.admisR{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+}
+.admisR p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.admisR h6{
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 9px;
+}
+.admisL i{
+    font-size: 25px;
+    color: red;
+    padding: 23px;
+    background: white;
+    border-radius: 90px;
+    height: 70px;
+    width: 70px;
+}
+/* --Admisson-END-- */
+
+
+/* --Best-Start-- */
+.best{
+    padding: 65px 0;
+}
+.bestL{
+    width: 50%;
+    float: left;
+}
+.bestL h5{
+    letter-spacing: 1px;
+    color: red;
+}
+.bestL h6{
+    font-size: 43px;
+    margin-top: 14px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.best button{
+    padding: 11px 25px;
+    background: #FF5421;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+}
+.bestR{
+    width: 50%;
+    float: left;
+    color: rgb(104, 104, 104)
+}
+.best p{
+    margin-top: 20px;
+}
+.best .pp{
+    margin-top: 20px;
+}
+/* --Best-END-- */
+
+
+/* --Program-Start-- */
+.program{
+    padding: 65px 0;
+    background: #F5F5F5;
+}
+.program h5{
+    color: red;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.program h4{
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.program-one{
+    width: 31.5%;
+    float: left;
+    background: white;
+}
+.two{
+    margin-left: 2.5%;
+}
+.program-one .un{
+    padding: 20px 20px;
+}
+.program-one h5{
+    color: red;
+}
+.program-one h5:hover{
+    color: rgb(224, 4, 4);
+}
+.program-one img{
+    width: 100%;
+    height: 100%;
+}
+.program-one p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+/* --Program-END-- */
+
+
+/* --Course-Start-- */
+.course{
+    padding: 50px 0;
+}
+.course h5{
+    color: red;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.course h3{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.course-one{
+    width: 31.5%;
+    float: left;
+    background: rgb(233, 233, 233);
+}
+.course-one img{
+    width: 100%;
+    height: 100%;
+}
+.basic{
+    padding: 20px 25px;
+}
+.basic h4{
+    font-size: 20px;
+    padding-bottom: 11px;
+    font-family: 'Roboto', sans-serif;
+}
+.basic .p{
+    padding: 1px 6px;
+    width: 33px;
+    background: rgb(240, 80, 6);
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+.basic i{
+    font-size: 12px;
+    opacity: 0.3;
+    margin-bottom: 12px;
+}
+.basic span{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.basic .ppp{
+    color: rgb(87, 87, 87);
+}
+.basic h4:hover{
+    color: red;
+}
+.course2{
+    margin-top: 50px;
+}
+.course-two{
+    width: 31.5%;
+    float: left;
+    background: rgb(233, 233, 233);
+    margin-top: 20px;
+}
+.course-two img{
+    width: 100%;
+    height: 100%;
+}
+/* --Course-END-- */
+
+
+/* --Total-Start-- */
+.total{
+    background: url(../img/banner-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+.total::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(233, 75, 2);
+    top: 0;
+    left: 0;
+    opacity: 0.98;
+    z-index: -1;
+}
+.total-one{
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+.total-one h1{
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+/* --Total-END-- */
+
+
+/* --Test-Start-- */
+.test{
+    padding: 60px 0;
+}
+.test h5{
+    text-align: center;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+}
+.test h4{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 4px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 30px;
+}
+.test-one{
+    width: 30%;
+    float: left;
+    background: whitesmoke;
+}
+.test-one p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(88, 88, 88);
+    margin-top: 15px;
+}
+.test-one i{
+    color: rgb(201, 201, 201);
+    font-size: 22px;
+}
+.test-one hr{
+    width: 85%;
+    margin: 0 auto;
+    border: none;
+    padding: 0.5px;
+    background: rgb(199, 199, 199);
+    margin-top: 28px;
+}
+.test-onet{
+    padding: 0 25px;
+    padding-top: 25px;
+}
+.test-oneb{
+    display: flex;
+    margin-top: 22px;
+    padding: 0 35px;
+    padding-bottom: 25px;
+}
+.testL img{
+    width: 50px;
+    border-radius: 50px;
+}
+.testR{
+    margin-left: 25px;
+}
+.testR span{
+    font-size: 14px;
+    color: rgb(78, 78, 78);
+}
+.test .two{
+    margin-left: 3.33%;
+}
+/* --Test-END-- */
+
+
+/* --Events-Start-- */
+.events{
+    padding: 60px 0;
+    background: #F5F5F5;
+}
+.events h5{
+    color: red;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.events h4{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 30px;
+}
+.events-one{
+    width: 31.5%;
+    float: left;
+    background: white;
+    font-family: 'Roboto', sans-serif;
+}
+.events-one img{
+    width: 100%;
+    height: 100%;
+}
+.events-bottom{
+    padding: 20px 20px;
+}
+.events-bottom i{
+    font-size: 15px;
+    margin-right: 20px;
+    color: red;
+}
+.events-one span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    margin-left: 5px;
+    color: rgb(85, 85, 85);
+}
+.events-bottom h2{
+    font-size: 20px;
+    margin-top: 11px;
+}
+.events-bottom p{
+    width: 90%;
+    color: rgb(107, 107, 107);
+    margin-top: 15px;
+}
+.events-bottom h6{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 16px;
+}
+/* --Events-END-- */
+
+
+/* --Campus-Start-- */
+.campus{
+    background: url(../img/banner-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px;
+    position: relative;
+    z-index: 1;
+}
+.campus::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(36, 33, 33);
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+}
+.campus h5{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+.campus h4{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 6px;
+    padding-bottom: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+.campus i{
+    color: rgb(212, 212, 212);
+    text-align: center;
+    display: block;
+    padding: 30px;
+    width: 85px;
+    height: 85px;
+    font-size: 25px;
+    background: rgb(235, 75, 11);
+    border-radius: 50px;
+    margin: 0 auto;
+}
+/* --Campus-END-- */
+
+
+/* --Us-Start-- */
+.us{
+    padding: 70px 0;
+    background: #F5F5F5;
+}
+.usL{
+    width: 50%;
+    float: left;
+}
+.usL img{
+    width: 100%;
+    height: 100%;
+}
+.usR{
+    width: 50%;
+    float: left;
+}
+.usR{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+.usR ul li{
+    display: flex;
+    margin-top: 50px;
+}
+.usR p{
+    font-size: 14px;
+    width: 70%;
+    margin-top: 12px;
+}
+.usR .span{
+    padding-left: 19px;
+}
+.usR i{
+    font-size: 17px;
+    padding: 22px;
+    width: 60px;
+    height: 60px;
+    background: #f55a2b;
+    color: white;
+    border-radius: 50px;
+}
+/* --Us-END-- */
+
+
+/* --Teacher-Start */
+.teacher{
+    padding: 60px 0;
+}
+.teacher h5{
+    text-align: center;
+    color: red;
+}
+.teacher h4{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 6px;
+    padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.teacher-one{
+    float: left;
+    width: 23.1%;
+}
+.teacher-one img{
+    width: 100%;
+    height: 100%;
+}
+.teacher h3{
+    text-align: center;
+    margin-top: 9px;
+}
+.teacher p{
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(77, 76, 76);
+}
+/* --Teacher-END */
+
+
+/* --Footer-Start-- */
+footer{
+    padding: 20px 0;
+    background: black;
+}
+.footerL{
+    width: 50%;
+    float: left;
+    color: rgb(224, 224, 224);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.footerR{
+    width: 50%;
+    float: left;
+}
+.footerR ul{
+    float: right;
+}
+.footerR ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 9px;
+}
+.footerR ul li a i{
+    color: rgb(196, 196, 196);
+}
+.footerR ul li a i:hover{
+    color: red;
+}
